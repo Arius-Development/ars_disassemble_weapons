@@ -21,10 +21,10 @@ function assembleWeapon(data)
 			for k, v in pairs(Config.WeaponNames) do
 				if data.name == v then
 					Config.Notification(locale("weapon_assembled"))
-					if Config.SaveDurability then
-						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.name)
+					if not Config.SaveDurability then
+						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name)
 					else
-						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.name, data.metadata.durability)
+						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name, data.metadata.durability)
 					end
 
 					break
