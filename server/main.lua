@@ -2,7 +2,7 @@ local ox_inventory = exports.ox_inventory
 
 
 
-RegisterNetEvent("ars_disassemble-weapons:assembleWeapon", function(weapon, w, durability)
+RegisterNetEvent("ars_disassemble-weapons:assembleWeapon", function(weapon, slot, w, durability)
     for i, v in pairs(Config.WeaponNames) do
         if string.find(i, string.upper(weapon)) then
             if durability then
@@ -10,7 +10,8 @@ RegisterNetEvent("ars_disassemble-weapons:assembleWeapon", function(weapon, w, d
             else
                 ox_inventory:AddItem(source, weapon, 1)
             end
-            ox_inventory:RemoveItem(source, w, 1)
+            print(slot)
+            ox_inventory:RemoveItem(source, w, 1, nil, slot)
             break
         end
     end
