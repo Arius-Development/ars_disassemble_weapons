@@ -1,0 +1,18 @@
+{
+    "assembling_weapon": "Montando arma",
+    "weapon_assembled": "Arma montata",
+    "assembelation_canceled": "Montaggio arma annullata",
+
+    "disassembling_weapon": "Smontando arma",
+    "weapon_disassembled": "Arma smontata",
+    "disassembelation_canceled": "Smontaggio arma annullata",
+
+    "disassemble":  "Smonta ",
+    "components":  "Componenti ",
+    "no_weapon": "Nessun arma da smontare",
+    "menu_title": "Menu smontaggio armi",
+
+    "key_description": "Premi %s per aprire il Menu smontaggio armi"
+    
+
+}

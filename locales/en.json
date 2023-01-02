@@ -1,0 +1,16 @@
+{
+    "assembling_weapon": "Assembling wweapon",
+    "weapon_assembled": "Weapon assembled",
+    "assembelation_canceled": "Weapon assembelation canceled",
+
+    "disassembling_weapon": "Disassembling weapon",
+    "weapon_disassembled": "Weapon disassembled",
+    "disassembelation_canceled": "Weapon disassemblation canceled",
+
+    "disassemble":  "Disassemble the ",
+    "components":  "Components ",
+    "no_weapon": "No weapon to disassemble",
+    "menu_title": "Weapon disassemble menu",
+
+    "key_description": "Press %s to open the Weapon disassemble menu"
+}
