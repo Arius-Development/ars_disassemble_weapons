@@ -48,3 +48,8 @@ https://streamable.com/4lpxvg
 **DOWNLOAD**
 
 https://github.com/Arius-Development/ars_disassemble_weapons/releases
+
+
+
+**FOR SUPPORT**
+https://discord.gg/MHssRAKY

@@ -2,6 +2,7 @@ Config = {}
 
 Config.Accessories      = true -- when disassembling it should disassemble accessories or not
 Config.SaveDurability   = true -- save durability when disassembling weapon
+Config.SaveSerialNumber = true -- save durability when disassembling weapon
 Config.EnableMenu       = true -- enable disassembling menu
 Config.OpenMenuKey      = "F10" -- key to open the menu
 Config.Menu             = "esx_menu_default" -- esx_menu_default, ox_lib_context_menu, ox_lib_menu
@@ -52,3 +53,4 @@ Config.WeaponNames = {
     ["WEAPON_DBSHOTGUN"]        = "dbshotgun",
     ["WEAPON_DOUBLEACTION"]     = "doubleaction",
 }
+
