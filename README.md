@@ -7,7 +7,7 @@ this is a simple script to assemble and disassemble your weapons using ox_invent
 
 1. Easy to configure
 2. Resmon 0.0 idle and in use
-3. Saves durability when weapon disassembled
+3. Saves serial and durability when weapon disassembled
 4. Disassembles accessories
 
 **INSTALLATION**
