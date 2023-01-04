@@ -21,10 +21,18 @@ function assembleWeapon(data)
 			for k, v in pairs(Config.WeaponNames) do
 				if data.name == v then
 					Config.Notification(locale("weapon_assembled"))
-					if not Config.SaveDurability then
-						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name)
+					if Config.SaveDurability and Config.SaveSerialNumber then
+						s = data.metadata.serial
+						if s == nil then s = "Weapon not registered" end
+						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name, {durability = data.metadata.durability, serial = s})
+					elseif Config.SaveDurability then
+						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name, {durability = data.metadata.durability})
+					elseif Config.SaveSerialNumber then
+						s = data.metadata.serial
+						if s == nil then s = "Weapon not registered" end
+						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name, {serial = data.metadata.serial})
 					else
-						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name, data.metadata.durability)
+						TriggerServerEvent("ars_disassemble-weapons:assembleWeapon", k, data.slot, data.name)
 					end
 
 					break
